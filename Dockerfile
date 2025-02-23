@@ -23,5 +23,5 @@ RUN pip install jupyterlab
 # Expone el puerto 8888 para JupyterLab
 EXPOSE 8888
 
-# Comando para iniciar JupyterLab en el directorio /workspace
-CMD ["sh", "-c", "uv run jupyter lab --ip=0.0.0.0 --allow-root --notebook-dir=/workspace --no-browser"]
+# Comando para iniciar JupyterLab
+CMD ["sh", "-c", "uv run jupyter lab --ip=0.0.0.0 --allow-root --no-browser"]

@@ -6,5 +6,5 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - ./notebooks:/workspace/notebooks
-      - ./data:/workspace/data
+      - ./notebooks:/workspace/proyecto1/notebooks
+      - ./data:/workspace/proyecto1/data
