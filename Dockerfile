@@ -15,7 +15,7 @@ RUN uv init proyecto1
 WORKDIR /workspace/proyecto1
 
 # Agrega las dependencias necesarias
-RUN uv add requests tensorflow tfx google-api-python-client protobuf pandas tensorflow-data-validation scikit-learn uvicorn
+RUN uv add requests tensorflow tfx google-api-python-client protobuf pandas tensorflow-data-validation scikit-learn uvicorn apache-beam[interactive]
 
 # Instala JupyterLab
 RUN pip install jupyterlab
