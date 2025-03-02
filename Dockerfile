@@ -1,7 +1,7 @@
 FROM python:3.10-slim
 
 # Instala curl para instalar uv
-RUN apt-get update && apt-get install -y curl g++
+RUN apt-get update && apt-get install -y curl g++ libsnappy-dev 
 
 # Instala uv y actualiza el PATH
 RUN curl -LsSf https://astral.sh/uv/install.sh | sh
@@ -18,7 +18,10 @@ WORKDIR /workspace/proyecto1
 RUN uv add requests tensorflow tfx google-api-python-client protobuf pandas tensorflow-data-validation scikit-learn uvicorn
 
 # Instala Apache Beam con las dependencias interactivas manualmente
-RUN pip install apache-beam[interactive]
+RUN pip install apache-beam[interactive] python-snappy
+
+# (Opcional) Instala dependencias extras para la visualización interactiva
+RUN pip install matplotlib bokeh ipywidgets
 
 # Instala JupyterLab
 RUN pip install jupyterlab
