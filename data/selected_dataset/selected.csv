@@ -1,4 +1,4 @@
-Elevation,Slope,Horizontal_Distance_To_Hydrology,Vertical_Distance_To_Hydrology,Horizontal_Distance_To_Roadways,Hillshade_9am,Hillshade_Noon,Horizontal_Distance_To_Fire_Points,target
+Elevation,Slope,Horizontal_Distance_To_Hydrology,Vertical_Distance_To_Hydrology,Horizontal_Distance_To_Roadways,Hillshade_9am,Hillshade_Noon,Horizontal_Distance_To_Fire_Points,Cover_Type
 2991,7,67,11,1015,233,234,1570,1
 2876,18,485,71,2495,192,202,1557,1
 3171,2,277,9,4374,213,237,1052,0
