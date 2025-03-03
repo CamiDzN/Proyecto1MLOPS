@@ -107,7 +107,12 @@ Ubicate en la carpeta principal del repositorio y construye la imagen y desplieg
 1. docker-compose build
 2. docker-compose up
 3. Accede a JupyterLab a través del navegador en la dirección (Agrega el token Generado) http://localhost:8888.
-
+4. Si deseas ejecutar el Notebook "Proyecto_1.ypynb" desde el inicio, debes eliminar los siguientes componentes para evitar errores por duplicidad o cache:
+	-Carpeta " pipeline_root"
+	-Contenido de la carpeta "data" (Sin eliminar la carpeta)
+	-Archivo " forest_constants.py"
+	-Archivo "forest_transform..py"
+	-Archivo "updated_schema..."
 
 ¡Gracias por revisar este proyecto!
 
