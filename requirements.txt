@@ -1,0 +1,12 @@
+numpy
+requests
+tensorflow
+tfx
+google-api-python-client
+protobuf
+pandas
+tensorflow-data-validation
+scikit-learn
+uvicorn
+apache-beam
+jupyterlab
